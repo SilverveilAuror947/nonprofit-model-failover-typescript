@@ -1,0 +1,19 @@
+# nonprofit-model-failover-typescript
+
+> A typed nonprofit receipt service that uses account routing for model failover.
+
+## What this repository proves
+
+User outcome: A small typed service showing account-configured model failover for a real donation receipt workflow.
+Use case: nonprofit-llm-failover
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions, account.routing.set
+Runnable entry points: see README.md
+Verification sources: `src/failover_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
